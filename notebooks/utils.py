@@ -240,6 +240,7 @@ if __name__=="__main__":
 
     with mp_pose.Pose(
         min_detection_confidence=0.5,
+        model_complexity=2,
         min_tracking_confidence=0.5) as pose:
         while cap.isOpened():
             success, image = cap.read()
